@@ -1,7 +1,7 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
-    color: #000000;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    background-color: #224B55;
+    color: #ffffff;
     padding: 0px;
     margin: 0px;
 }
@@ -40,18 +40,59 @@ a {
 
 #hero {
     position: relative;
+    margin: 10% auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 10em;
+    font-weight: 900;
+}
+
+#herovid {
+    object-fit: cover;
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    left: 0;
+}
+
+#inner1, #inner2, #inner3, #inner4 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#innerText0 {
+    text-shadow: 0px 0px 25px rgba(255, 255, 255, 0.2),
+    0px 0px 75px rgba(255, 255, 255, 0.3), 
+    0px 0px 6px #ffffff;
+}
+
+#innerText1 {
+    mix-blend-mode: screen;
+    text-shadow: 4px 0px 8px rgba(0, 211, 255, 0.54);
+}
+
+#innerText2 {
+    mix-blend-mode: screen;
+    text-shadow: -4px 0px 8px rgb(255, 93, 115);
+}
+
+/* #hero {
+    position: relative;
     height: 50vh;
     width: 100%;
     overflow: hidden;
-}
+} */
 
 /* #img-container {
     max-height: inherit;
     transform: translateY(50%);
 } */
 
-#hero img {
+/* #hero img {
     position: absolute;
     top:-100%; left:0; right: 0; bottom:-100%;
     margin: auto;
-}
+} */
