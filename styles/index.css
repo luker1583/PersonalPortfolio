@@ -104,6 +104,12 @@ a {
     font-weight: 900;
 }
 
+@media (max-width: 550px) {
+    #innerText0, #innerText1, #innerText2 {
+        font-size: 7em;
+    }
+}
+
 #content {
     margin: auto;
     margin-top: 50vh;
@@ -175,6 +181,12 @@ a {
 .projectBoxDesc {
     width: 70%;
     margin: auto;
+}
+
+@media (max-width: 550px) {
+    .headline {
+        font-size: 4.5em;
+    }
 }
 
 #moduloBox {
