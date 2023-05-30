@@ -166,7 +166,31 @@
         font-size: 3em;
         margin-bottom: -20px;
     }
+
+    .projectHeader {
+        font-size: 35px;
+    }
 }
+
+@media (max-width: 500px) {
+    .headline {
+        font-size: 2em;
+        margin-bottom: -15px;
+    }
+
+    .projectBox {
+        padding: 20px 10px;
+    }
+
+    .projectHeader {
+        font-size: 20px;
+    }
+
+    .projectBoxDesc {
+        width: 90%;
+    }
+}
+
 
 #moduloBox {
     width: 100%;
@@ -175,6 +199,11 @@
 
 #interview {
     background-color: #4D439B;
+}
+
+#ytvid {
+    width: 60%;
+    aspect-ratio: 16/9;
 }
 
 #film {
