@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>Luke Roth</title>
+        <link rel="stylesheet" type="text/css" href="styles/common.css">
         <link rel="stylesheet" type="text/css" href="styles/index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,16 +15,16 @@
             <div class="table">
                 <ul id="menuList">
                     <li>
-                        Overview
+                        <a href="">Overview</a>
                     </li>
                     <li>
-                        Accomplishments
+                        <a href="accomplishments">Accomplishments</a>
                     </li>
                     <li>
-                        Experience
+                        <a href="experience">Experience</a>
                     </li>
                     <li>
-                        Portfolio
+                        <a href="portfolio">Portfolio</a>
                     </li>
                 </ul>
             </div>
@@ -53,7 +54,7 @@
             <h3 class="tagline">Programmer, designer, creator.</h3>
             <div class="divider"></div>
 
-            <p>A highly spirited, enthusiastic, and curious student of science, math, technology, and design with a proven track record of leading, participating in and building teams, helping businesses, friends and family achieve solid results. Expert in many areas including graphic design, web and app development, coding, audio/video production, wireless and wired networking and computer infrastructure technologies.</p>
+            <p class="blurb">A highly spirited, enthusiastic, and curious student of science, math, technology, and design with a proven track record of leading, participating in and building teams, helping businesses, friends and family achieve solid results. Expert in many areas including graphic design, web and app development, coding, audio/video production, wireless and wired networking and computer infrastructure technologies.</p>
 
             <div class="spacer"></div>
 
@@ -63,36 +64,40 @@
 
                 <div class="projectBox" id="moduloBox">
                     <img src="images/modulo.png" alt="modulo">
-                    <h2 class="projectHeader">Social media platform from scratch</h2>
+                    <h2 class="projectHeader">Feature-complete social media platform</h2>
                     <p class="projectBoxDesc">A cross-platform social media site where users can create accounts, follow each other, and post text and images</p>
+                    <span class="projectTag">#Development</span>
+                </div>
+
+                <div class="projectBox" id="interview">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TdrRGBCv_YU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h2 class="projectHeader">Alba: A Lifetime of Empowerment Documentary</h2>
+                    <p class="projectBoxDesc">A portrait of Alba Jaramillo, Director of the YWCA Southern Arizona Latina Leadership Institute, whose own immigrant background inspired her to rebuild and renew the YWCA's programs for undocumented Latina women.</p>
+                    <span class="projectTag">#Video Production</span>
                 </div>
 
                 <!-- Projects to add
                     - processing sketch (semester 7 / ISTA301)
                     - FTV 301H final interview video
                     - 3d modeled stove holder
-                    - jailbreak tweak -->
+                    - jailbreak tweak
+                    - CSC 343 PM7 checkout -->
 
-                    <h1 class="headline" id="footerHeadline">Get in touch.</h1>
-                    <div id="footer">
-                        <h2 class="projectHeader" id="footerEmail"><a href="mailto:luke@luke.works">luke@luke.works</a></h2>
-                        <div class="divider dividerLeft"></div>
-                        <p class="projectBoxDesc">I'm a student at the University of Arizona pursuing a BS in Computer Science. I'd love to work with you or help you achieve your goals. If you think I'm the right person for the job, get in contact!<br><br></p>
-                        <p class="projectBoxDesc">Luke Roth</p>
+                <h1 class="headline" id="footerHeadline">Get in touch.</h1>
+                <div id="footer">
+                    <h2 class="projectHeader" id="footerEmail"><a href="mailto:luke@luke.works">luke@luke.works</a></h2>
+                    <div class="divider dividerLeft"></div>
+                    <p class="projectBoxDesc">I'm a student at the University of Arizona pursuing a BS in Computer Science. I'd love to work with you or help you achieve your goals. If you think I'm the right person for the job, get in contact!<br><br></p>
+                    <p class="projectBoxDesc">Luke Roth</p>
 
-                        <div id="socials">
-                            <a href="https://github.com/pyroxal">
-                                <span class="contactIcon">
-                                    <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 60"><path d="M31 0a30.7 30.7 0 0 0-9.8 59.9c1.55.3 2.116-.6 2.116-1.4s-.026-2.7-.042-5.3c-8.622 1.9-10.44-4.1-10.44-4.1-1.414-3.5-3.448-4.5-3.448-4.5-2.815-1.9.213-1.9.213-1.9a6.74 6.74 0 0 1 4.746 3.2c2.766 4.7 7.254 3.3 9.023 2.6a6.3 6.3 0 0 1 1.966-4.1c-6.88-.8-14.12-3.5-14.12-15.2a11.964 11.964 0 0 1 3.193-8.3 10.9 10.9 0 0 1 .3-8.1s2.6-.9 8.525 3.1a30.617 30.617 0 0 1 15.522 0c5.92-4 8.517-3.1 8.517-3.1a10.886 10.886 0 0 1 .308 8.1 11.946 11.946 0 0 1 3.186 8.3c0 11.8-7.248 14.4-14.155 15.1a7.52 7.52 0 0 1 2.1 5.7c0 4.1-.04 7.5-.04 8.5 0 .8.56 1.7 2.13 1.4A30.708 30.708 0 0 0 31 0"></path></svg>
-                                </span>
-                            </a>
-                            
-                        </div>
-
-                        
-
-                        
+                    <div id="socials">
+                        <a href="https://github.com/pyroxal">
+                            <span class="contactIcon">
+                                <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 60"><path d="M31 0a30.7 30.7 0 0 0-9.8 59.9c1.55.3 2.116-.6 2.116-1.4s-.026-2.7-.042-5.3c-8.622 1.9-10.44-4.1-10.44-4.1-1.414-3.5-3.448-4.5-3.448-4.5-2.815-1.9.213-1.9.213-1.9a6.74 6.74 0 0 1 4.746 3.2c2.766 4.7 7.254 3.3 9.023 2.6a6.3 6.3 0 0 1 1.966-4.1c-6.88-.8-14.12-3.5-14.12-15.2a11.964 11.964 0 0 1 3.193-8.3 10.9 10.9 0 0 1 .3-8.1s2.6-.9 8.525 3.1a30.617 30.617 0 0 1 15.522 0c5.92-4 8.517-3.1 8.517-3.1a10.886 10.886 0 0 1 .308 8.1 11.946 11.946 0 0 1 3.186 8.3c0 11.8-7.248 14.4-14.155 15.1a7.52 7.52 0 0 1 2.1 5.7c0 4.1-.04 7.5-.04 8.5 0 .8.56 1.7 2.13 1.4A30.708 30.708 0 0 0 31 0"></path></svg>
+                            </span>
+                        </a>
                     </div>
+                </div>
 
             </div>
 

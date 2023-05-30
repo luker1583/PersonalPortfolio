@@ -1,51 +1,3 @@
-:root {
-    --orange: #FAA45B;
-    --red: #E1714C;
-    --lblue: #568DAC;
-    --dblue: #1B3242;
-}
-
-body {
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    background-color: var(--dblue);
-    color: #ffffff;
-    padding: 0px;
-    margin: 0px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    margin: 0px;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-#topMenu {
-    width: 100%;
-    height: 10%;
-    background-color: black;
-    color: white;
-    text-align: center;
-
-}
-
-.table {
-    display: table;
-    margin: 0 auto;
-}
-
-#menuList {
-    text-align: center;
-}
-
-#menuList li {
-    display: inline-block;
-    padding: 20px;
-    cursor: pointer;
-}
-
 #hero {
     position: relative;
     margin: auto;
@@ -121,12 +73,19 @@ a {
 #grid {
     max-width: 1000px;
     margin: auto;
+    
 }
 
 .tagline {
     text-align: center;
     font-size: 2em;
     font-weight: 700;
+}
+
+.blurb {
+    padding: 0px 50px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .divider {
@@ -158,9 +117,19 @@ a {
 .projectBox {
     min-height: 500px;
     padding: 90px 50px 60px;
+    margin-bottom: 100px;
     overflow: hidden;
     box-sizing: border-box;
     transition: all 0.4s ease;
+    position: relative;
+}
+
+.projectTag {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 18px;
+    opacity: 50%;
 }
 
 .projectBox:hover {
@@ -168,9 +137,10 @@ a {
 }
 
 .projectHeader {
-    font-size: 46px;
+    font-size: 40px;
     margin: 30px auto;
-    width: 80%;
+    width: 90%;
+    font-weight: 600;
 }
 
 .projectBox img {
@@ -192,6 +162,10 @@ a {
 #moduloBox {
     width: 100%;
     background-color: #032735;
+}
+
+#interview {
+    background-color: #4D439B;
 }
 
 #moduloBox img {

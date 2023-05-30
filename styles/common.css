@@ -1,0 +1,57 @@
+:root {
+    --orange: #FAA45B;
+    --red: #E1714C;
+    --lblue: #568DAC;
+    --dblue: #1B3242;
+}
+
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    background-color: var(--dblue);
+    color: #ffffff;
+    padding: 0px;
+    padding-top: 90px;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#topMenu {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+
+}
+
+.table {
+    display: table;
+    margin: 0 auto;
+}
+
+#menuList {
+    text-align: center;
+}
+
+#menuList li {
+    display: inline-block;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#menuList li:hover {
+    transform: scale(110%);
+    
+}

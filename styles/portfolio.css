@@ -1,0 +1,10 @@
+#content {
+    margin: auto;
+    padding: 50px 5%;
+    max-width: 1300px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 64pt;
+}
