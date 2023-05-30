@@ -154,9 +154,17 @@
     margin: auto;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 1000px) {
     .headline {
         font-size: 4.5em;
+        margin-bottom: -25px;
+    }
+}
+
+@media (max-width: 750px) {
+    .headline {
+        font-size: 3em;
+        margin-bottom: -20px;
     }
 }
 
@@ -227,3 +235,9 @@
     height: 30px;
     display: inline-block;
 }
+
+/* @media (max-width: 550px) {
+    .headline {
+        font-size: 4.5em;
+    }
+} */
