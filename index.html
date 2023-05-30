@@ -9,22 +9,24 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     </head>
     <body>
         <div id="topMenu">
             <div class="table">
                 <ul id="menuList">
                     <li>
-                        <a href="">Overview</a>
+                        <a href="#herovid">Overview</a>
                     </li>
                     <li>
-                        <a href="accomplishments">Accomplishments</a>
+                        <a href="#accomplishments">Accomplishments</a>
                     </li>
                     <li>
-                        <a href="experience">Experience</a>
+                        <a href="#experience">Experience</a>
                     </li>
                     <li>
-                        <a href="portfolio">Portfolio</a>
+                        <a href="#portfolio">Portfolio</a>
                     </li>
                 </ul>
             </div>
@@ -60,7 +62,7 @@
 
             <div id="grid">
 
-                <h1 class="headline">Projects.</h1>
+                <h1 class="headline" id="portfolio">Projects.</h1>
 
                 <div class="projectBox" id="moduloBox">
                     <img src="images/modulo.png" alt="modulo">
@@ -76,6 +78,41 @@
                     <span class="projectTag">#Video Production</span>
                 </div>
 
+                <div class="projectBox" id="film">
+                    <img src="images/film-photo.jpg" alt="Scenic Highway" id="filmPhoto">
+                    <h2 class="projectHeader">Analog Film Photography</h2>
+                    <p class="projectBoxDesc">Film photos taken wth various analog cameras</p>
+                    <span class="projectTag">#Photography</span>
+                </div>
+
+                <div class="spacer"></div>
+
+                <h1 class="headline">Accomplishments.</h1>
+
+                <div class="projectBox" id="accomplishments">
+                    <ul>
+                        <li>Achieved a Bachelor's of Science degree in Computer Science from the University of Arizona</li>
+                        <li>Created a fully functional social media platform using Node.js, developing both a functional server and web and android clients, as well as designing the interface for both</li>
+                        <li>Served as graphic designer for high school student body creating promotional videos, posters, and a spirit shirt worn by thousands of students</li>
+                        <li>Former graphic designer and webmaster for the American Institute for Aeronautics and Astronautics University of Arizona chapter designing social media posts, updating the website, and posting to social media</li>
+                        <li>Obtained and maintain a level 1 certification with the National Association of Rocketry allowing the construction and launch of large scale model rockets</li>
+                    </ul>
+                </div>
+
+                <div class="spacer"></div>
+
+                <h1 class="headline">Experience.</h1>
+
+                <div class="projectBox" id="experience">
+                    <ul>
+                        <li>Extensive programming knowledge in Java, C/C++, Python, HTML/CSS, Javascript</li>
+                        <li>Knowledge of mobile operating systems, including writing jailbreak tweaks for SpringBoard on iOS</li>
+                        <li>Over 10 years of Photoshop, Illustrator, and Premiere Pro experience</li>
+                        <li>Created, updated, and maintained numerous websites for clients and personal use</li>
+                        <li>Managed social media for High School student body, the AIAA UArizona chapter, and numerous Instagram pages with thousands of followers</li>
+                    </ul>
+                </div>
+
                 <!-- Projects to add
                     - processing sketch (semester 7 / ISTA301)
                     - FTV 301H final interview video
@@ -87,7 +124,7 @@
                 <div id="footer">
                     <h2 class="projectHeader" id="footerEmail"><a href="mailto:luke@luke.works">luke@luke.works</a></h2>
                     <div class="divider dividerLeft"></div>
-                    <p class="projectBoxDesc">I'm a student at the University of Arizona pursuing a BS in Computer Science. I'd love to work with you or help you achieve your goals. If you think I'm the right person for the job, get in contact!<br><br></p>
+                    <p class="projectBoxDesc">I'm a graduate from the University of Arizona with a BS in Computer Science, still living in Tucson, Arizona. I'd love to work with you or help you achieve your goals. If you think I'm the right person for the job, get in contact!<br><br></p>
                     <p class="projectBoxDesc">Luke Roth</p>
 
                     <div id="socials">
@@ -103,5 +140,19 @@
 
         </div>
         
+        <script>
+            $(document).ready(function(){
+            $("#menuList li").hover(function(){
+                // this gets executed when a li is hovered
+                $(this).prevAll().addClass('moveLeft');
+                $(this).nextAll().addClass('moveRight');
+            }, function(){
+                // this gets executed when hover ends
+                $(this).prevAll().removeClass('moveLeft');
+                $(this).nextAll().removeClass('moveRight');
+            });
+            });
+
+        </script>
     </body>
 </html>

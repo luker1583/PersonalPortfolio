@@ -26,6 +26,7 @@
     height: 50vh;
     position: absolute;
     left: 0;
+    top: 0;
 }
 
 #inner1, #inner2 {
@@ -117,7 +118,7 @@
 .projectBox {
     min-height: 500px;
     padding: 90px 50px 60px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     overflow: hidden;
     box-sizing: border-box;
     transition: all 0.4s ease;
@@ -166,6 +167,26 @@
 
 #interview {
     background-color: #4D439B;
+}
+
+#film {
+    background-color: #82639b;
+}
+
+#accomplishments {
+    background-color: #37a36d;
+    text-align: left;
+    font-size: x-large;
+}
+
+#experience {
+    background-color: #a54348;
+    text-align: left;
+    font-size: x-large;
+}
+
+#film img {
+    width: 75%;
 }
 
 #moduloBox img {

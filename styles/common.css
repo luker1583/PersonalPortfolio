@@ -25,14 +25,16 @@ a {
 
 #topMenu {
     width: 100%;
-    background-color: black;
+    /* background-color: black; */
     color: white;
     text-align: center;
     position: fixed;
     top: 0px;
     left: 0px;
     z-index: 100;
-
+    font-weight: 500;
+    background: rgba(0, 0, 0, 0.7); /* Adjust color and transparency as needed */
+    backdrop-filter: blur(10px); /* Adjust blur radius as needed */
 }
 
 .table {
@@ -55,3 +57,14 @@ a {
     transform: scale(110%);
     
 }
+
+.moveLeft {
+    transform: translateX(-10px);  /* Adjust distance as needed */
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .moveRight {
+    transform: translateX(10px);  /* Adjust distance as needed */
+    transition: transform 0.4s ease-in-out;
+  }
+  
