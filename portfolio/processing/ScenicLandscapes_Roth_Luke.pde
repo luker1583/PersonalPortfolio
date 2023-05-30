@@ -10,7 +10,7 @@ Once finished, the program makes a finished scene.
 
 */
 
-import processing.sound.*;
+//import processing.sound.*;
 
 // ----- Global Variables -----
 
@@ -34,7 +34,7 @@ PImage[] rain = new PImage[8];
 PImage[] flies = new PImage[73];
 
 // stores sound file
-SoundFile sound;
+//SoundFile sound;
 
 // stores current tool
 String tool = "grass";
@@ -448,22 +448,22 @@ void mousePressed() {
     if (mouseX >= 200 && mouseX < 500 && mouseY >= 100 && mouseY < 200) {
       choseSunny = true;
       saveFrame("finishedCanvas.tiff");
-      if (choseDay) {
-        sound = new SoundFile(this, "sound/day.mp3");
-        sound.loop();
+      //if (choseDay) {
+      //  sound = new SoundFile(this, "sound/day.mp3");
+      //  sound.loop();
         
-      } else {
-        sound = new SoundFile(this, "sound/night.mp3");
-        sound.loop();
-      }
+      //} else {
+      //  sound = new SoundFile(this, "sound/night.mp3");
+      //  sound.loop();
+      //}
     }
     
     // chose rainy
     if (mouseX >= 500 && mouseX < 800 && mouseY >= 100 && mouseY < 200) {
       choseRainy = true;
       saveFrame("finishedCanvas.tiff");
-      sound = new SoundFile(this, "sound/rain.mp3");
-      sound.loop();
+      //sound = new SoundFile(this, "sound/rain.mp3");
+      //sound.loop();
     }
     
   }
